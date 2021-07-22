@@ -69,7 +69,7 @@ public class TelaInicialHelper {
         //Converte o valor em float pra reais
         String custoF = NumberFormat.getCurrencyInstance(ptBr).format(custo);
         
-        this.view.getLblResult().setText("Custo Mensal:");
+        this.view.getLblResult().setText("Custo mensal:");
         this.view.getLblValor().setText(custoF);
         
         this.view.getLblErro().setText("");

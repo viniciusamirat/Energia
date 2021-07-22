@@ -55,32 +55,33 @@ public class TelaInicial extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(500, 500));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel1.setText("Potência do aparelho (em W)");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel2.setText("Tempo de uso por dia (em horas)");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel5.setText("Ou");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel4.setText("Tempo de uso por dia (em minutos)");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel3.setText("Preço do kWh");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, -1, -1));
 
+        txtKW.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txtKW.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtKWActionPerformed(evt);
             }
         });
-        getContentPane().add(txtKW, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 60, 32));
+        getContentPane().add(txtKW, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 90, 40));
 
         txtHoras.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -99,11 +100,11 @@ public class TelaInicial extends javax.swing.JFrame {
                 txtHorasActionPerformed(evt);
             }
         });
-        getContentPane().add(txtHoras, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 60, 32));
-        getContentPane().add(txtCusto, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 60, 32));
+        getContentPane().add(txtHoras, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 150, 90, 40));
+        getContentPane().add(txtCusto, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 90, 40));
 
         btnCalcular.setBackground(new java.awt.Color(0, 102, 255));
-        btnCalcular.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnCalcular.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnCalcular.setForeground(new java.awt.Color(255, 255, 255));
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
@@ -111,17 +112,17 @@ public class TelaInicial extends javax.swing.JFrame {
                 btnCalcularActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 109, 32));
+        getContentPane().add(btnCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 130, 32));
 
-        lblResult.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        getContentPane().add(lblResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 132, 20));
+        lblResult.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        getContentPane().add(lblResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 370, 190, 40));
 
-        lblValor.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        lblValor.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblValor.setForeground(new java.awt.Color(204, 51, 0));
-        getContentPane().add(lblValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 370, 107, 20));
+        getContentPane().add(lblValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 160, 40));
 
         btnLimpa.setBackground(new java.awt.Color(0, 102, 255));
-        btnLimpa.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnLimpa.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnLimpa.setForeground(new java.awt.Color(255, 255, 255));
         btnLimpa.setText("Limpar tela");
         btnLimpa.addActionListener(new java.awt.event.ActionListener() {
@@ -129,11 +130,11 @@ public class TelaInicial extends javax.swing.JFrame {
                 btnLimpaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnLimpa, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 109, 32));
+        getContentPane().add(btnLimpa, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 220, 130, 32));
 
-        lblErro.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblErro.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         lblErro.setForeground(new java.awt.Color(102, 102, 102));
-        getContentPane().add(lblErro, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 161, 12));
+        getContentPane().add(lblErro, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 220, 20));
 
         txtMinutos.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -152,17 +153,18 @@ public class TelaInicial extends javax.swing.JFrame {
                 txtMinutosActionPerformed(evt);
             }
         });
-        getContentPane().add(txtMinutos, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 60, 32));
+        getContentPane().add(txtMinutos, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 90, 40));
 
-        lblTitulo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        lblTitulo.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(0, 102, 204));
         lblTitulo.setText("Quanto gasta seu aparelho?");
-        getContentPane().add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, -1));
+        getContentPane().add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, -1, -1));
 
-        lblRS.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblRS.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         lblRS.setText("R$");
-        getContentPane().add(lblRS, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, -1, -1));
+        getContentPane().add(lblRS, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 300, -1, -1));
 
+        lblFundo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/fundo.png"))); // NOI18N
         getContentPane().add(lblFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
